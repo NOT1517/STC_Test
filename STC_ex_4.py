@@ -5,7 +5,7 @@ def spectral_density(freq, p_n, h_f, K, f, f_pom_n, f_pom_v, f_pom_s):
     if freq >= f_pom_n and freq < f_pom_s:
         return (h_f ** 2 * p_n ** 2 * 1e6 / K / f_pom_s)
     elif freq >= f_pom_s and freq <= f_pom_v:
-        return (h_f ** 2 * p_n ** 2 * 1e6 / K / f **2)
+        return (h_f ** 2 * p_n ** 2 * 1e6 / K / f ** 2)
     else:
         return 0
 
